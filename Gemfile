@@ -76,3 +76,5 @@ gem "concurrent-ruby", "= 1.3.4"
 gem "jsbundling-rails", "~> 1.3"
 
 gem "devise", "~> 5.0"
+
+gem "tailwindcss-rails", "~> 4.4"
