@@ -5,7 +5,7 @@
 
   <div class="field">
     <p><%= f.label :email %></p>
-    <p><%= f.email_field :email, autofocus: true, autocomplete: "email" %></p>
+    <p><%= f.email_field :email, autofocus: true, autocomplete: "email", class: "bg-blue-100 border black" %></p>
   </div>
 
   <div class="field">
@@ -13,16 +13,16 @@
     <% if @minimum_password_length %>
       <p><em>(<%= @minimum_password_length %> characters minimum)</em></p>
     <% end %>
-    <p><%= f.password_field :password, autocomplete: "new-password" %></p>
+    <p><%= f.password_field :password, autocomplete: "new-password", class: "bg-blue-100 border black"%></p>
   </div>
 
   <div class="field">
     <p><%= f.label :password_confirmation %></p>
-    <p><%= f.password_field :password_confirmation, autocomplete: "new-password" %></p>
+    <p><%= f.password_field :password_confirmation, autocomplete: "new-password", class: "bg-blue-100 border black"%></p>
   </div>
 
   <div class="actions">
-    <%= f.submit "Sign up" %>
+    <%= f.submit "Sign up", class: "bg-gray-100 px-4 py-2 rounded hover:bg-gray-300" %>
   </div>
 <% end %>
 
